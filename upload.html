@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>File Uploaded</title>
+    <style>
+        body {
+            background-image: url('static/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height for the page */
+            color: white; /* Default text color */
+            text-align: center; /* Center the text */
+        }
+
+        /* Overlay to enhance text visibility */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            padding: 2rem; /* Add padding for better spacing */
+            border-radius: 8px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Your file has been uploaded and encrypted successfully!</h1>
+        <p>Here is your QR code to access the file:</p>
+        <img src="{{ qr_code }}" alt="QR Code" class="mb-4">
+        <p><a href="{{ download_link }}" target="_blank" class="text-blue-400 hover:underline">Click here to download the file</a></p>
+    </div>
+</body>
+</html>
+
