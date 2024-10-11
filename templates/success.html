@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Successful</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('static/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            height: 100vh; /* Full height for the page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Default text color */
+            text-align: center; /* Center the text */
+            position: relative; /* Relative positioning for the creator mark */
+        }
+
+        /* Overlay to enhance text visibility */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            padding: 2rem; /* Add padding for better spacing */
+            border-radius: 8px; /* Rounded corners */
+            max-width: 400px; /* Set a maximum width for the overlay */
+            width: 100%; /* Full width for smaller screens */
+            position: relative; /* Position relative for absolute positioning of the creator mark */
+        }
+
+        /* Optional link styling */
+        a {
+            color: #1DA1F2; /* Twitter blue color */
+            text-decoration: none; /* No underline */
+            transition: color 0.3s; /* Smooth transition */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .creator-mark {
+            position: absolute; /* Absolute positioning */
+            bottom: 10px; /* Positioning from the bottom */
+            right: 10px; /* Positioning from the right */
+            font-size: 0.9rem; /* Smaller font size */
+            color: #ccc; /* Light color for the mark */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1 class="text-3xl font-bold mb-4">Upload Successful!</h1>
+        <p class="mb-4">Your file has been uploaded successfully.</p>
+        <h2 class="text-2xl mb-4">Scan the QR Code to access your document:</h2>
+        <img src="{{ qr_image_path }}" alt="QR Code" class="mb-4">
+        <a href="/" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Upload Another File</a>
+    </div>
+    <div class="creator-mark">Created by Rani ★</div> <!-- Creator mark positioned at the bottom right -->
+</body>
+</html>
