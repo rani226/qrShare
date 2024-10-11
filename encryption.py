@@ -28,3 +28,4 @@ def encrypt_file(file_path):
     
     os.remove(file_path)
     return encrypted_file_path
+
