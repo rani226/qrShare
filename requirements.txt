@@ -1,4 +1,6 @@
-Flask==2.1.1
-cryptography==36.0.1
-qrcode==7.3.1
-PyGithub==1.3.1
+Flask==2.3.3               # Flask for the web framework
+gunicorn==21.2.0           # WSGI server for deployment (if using gunicorn)
+qrcode==7.3.1              # To generate QR codes
+firebase-admin==6.2.0      # Firebase Admin SDK to integrate with Firebase
+python-dotenv==1.0.0       # To load environment variables from a .env file
+cryptography==41.0.4       # For encrypting and decrypting uploaded files
