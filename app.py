@@ -61,10 +61,10 @@ def serve_qr_code():
     return send_file('static/uploads/qrcode.png')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,use_reloader=False)
 
-def serve_qr_code():
+'''def serve_qr_code():
     return send_file('static/uploads/qrcode.png')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)'''
