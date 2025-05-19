@@ -1,4 +1,3 @@
-
 body {
     background-image: url('static/background.jpg');
     background-repeat: no-repeat;
@@ -43,6 +42,7 @@ button:hover {
 .animate-fadeIn {
     animation: fadeIn 1s ease-in-out; /* Change duration as needed */
 }
+
 
 
 
