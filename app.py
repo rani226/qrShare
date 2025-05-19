@@ -19,7 +19,7 @@ def home():
     return send_from_directory('.', 'index.html')
 
 # Route for file upload
-@app.route('/upload', methods=['POST'])
+@app.route('upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return 'No file part'
